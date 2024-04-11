@@ -1,9 +1,9 @@
 # Game-Analysis-using-SQL
 
 ### Table of contents
-- [Project Overview](#project-overview)
-- [Project statment](#project-statment)
-- [Tools](#tools)
+- [Project Name](#project-Name)
+- [Dataset Description](#Dataset-Description)
+- [What to Do](#What-to-do)
 
 ###  Project Name: Decode Gaming Behavior
 
@@ -20,11 +20,11 @@ two tables:
 - `P_ID`: Player ID
 - `PName`: Player Name
 - `L1_status`: Level 1 Status
-- L2_status`: Level 2 Status
+- 'L2_status`: Level 2 Status
 - `L1_code`: Systemgenerated Level 1 Code
 - `L2_code`: Systemgenerated Level 2 Code
 
-##Level Details Table:
+## Level Details Table:
 
 - `P_ID`: Player ID
 - `Dev_ID`: Device ID
@@ -51,7 +51,7 @@ games on multiple days.
 5. Find `P_ID` and levelwise sum of `kill_counts` where `kill_count` is greater than the
 average kill count for Medium difficulty.
 6. Find `Level` and its corresponding `Level_code`wise sum of lives earned, excluding Level
-0. Arrange in ascending order of level.
+ '0' Arrange in ascending order of level.
 7. Find the top 3 scores based on each `Dev_ID` and rank them in increasing order using
 `Row_Number`. Display the difficulty as well.
 8. Find the `first_login` datetime for each device ID.
@@ -61,12 +61,12 @@ using `Rank`. Display `Dev_ID` as well.
 (`P_ID`). Output should contain player ID, device ID, and first login datetime.
 11. For each player and date, determine how many `kill_counts` were played by the player
 so far.
-a) Using window functions
-b) Without window functions
+a). Using window functions
+b). Without window functions
 12. Find the cumulative sum of stages crossed over `start_datetime` for each `P_ID`,
 excluding the most recent `start_datetime`.
 13. Extract the top 3 highest sums of scores for each `Dev_ID` and the corresponding `P_ID`.
 14. Find players who scored more than 50% of the average score, scored by the sum of
 scores for each `P_ID`.
 15. Create a stored procedure to find the top `n` `headshots_count` based on each `Dev_ID`
-and rank them in increasing order using `Row_Number`. Display the difficulty 
+and rank them in increasing order using `Row_Number`. Display the difficulty as well.
